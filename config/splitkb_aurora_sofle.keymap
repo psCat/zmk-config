@@ -4,6 +4,44 @@
  * SPDX-License-Identifier: MIT
  */
 
+// Move these to own file. Did not work before.
+#define SE_AUOO LBKT // Å
+#define SE_OUEE SEMI // Ö
+#define SE_AUEE SQT  // Ä            single quote
+
+#define SE_EXCL  LS(N1)     // !
+#define SE_DQT   LS(N2)     // "
+#define SE_HASH  LS(N3)     // #
+#define SE_PRCNT LS(N5)     // %
+#define SE_AMPS  LS(N6)     // &
+#define SE_SLASH LS(N7)     // /
+#define SE_LPAR  LS(N8)     // (
+#define SE_RPAR  LS(N9)     // )
+#define SE_LBRC RA(SE_7)    // {
+#define SE_RBRC RA(SE_0)    // }
+#define SE_LBKT RA(SE_8)    // [
+#define SE_RBKT RA(SE_9)    // ]
+#define SE_EQUAL LS(N0)     // =
+#define SE_AT    RA(N2)     // @
+#define SE_SEMI LS(SE_COMM) // ;
+#define SE_PIPE RA(LT)      // |
+#define SE_EQUAL LS(N0)     // =
+#define SE_QMARK LS(PLUS)   // ?
+#define SE_LT NUBS          // <
+#define SE_GT LS(SE_LT)     // >
+#define SE_COLON LS(DOT)    // :
+#define SE_CARET LS(RBKT)   // ^ (dead)
+#define SE_GRAVE LS(EQUAL)  // ` (dead)
+#define SE_STAR LS(SE_APOS) // *
+#define SE_MINUS SLASH      // -
+#define SE_DOLLAR  RA(N4)   // $
+#define SE_BSLH EQUAL       // ´ (dead)
+#define SE_PLUS MINS       // +
+#define SE_APOS NUHS       // '
+#define SE_TILDE2 TILDE2
+// TILDE2
+
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -17,17 +55,7 @@
 #define NUM 2
 #define FUNC 3
 #define MEDIA 4
-
 // #define QWERTY
-
-
-/* Uncomment this block if using RGB
-&led_strip {
-    chain-length = <6>;
-    // chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
-    // chain-length = <29>; // Uncomment if using only per-key LEDs.
-};
- */
 
 / {
     keymap {
