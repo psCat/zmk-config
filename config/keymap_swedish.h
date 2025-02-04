@@ -19,7 +19,7 @@
 #define SE_RBKT RA(N9)    // ]
 #define SE_EQUAL LS(N0)     // =
 #define SE_AT    RA(N2)     // @
-#define SE_SEMI LS(SE_COMM) // ;
+#define SE_SEMI LS(COMMA) // ;
 #define SE_PIPE RA(LT)      // |
 #define SE_EQUAL LS(N0)     // =
 #define SE_QMARK LS(PLUS)   // ?
