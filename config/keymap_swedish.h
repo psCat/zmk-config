@@ -5,6 +5,7 @@
 #define SE_OUEE SEMI // Ö
 #define SE_AUEE SQT  // Ä            single quote
 
+#define SE_COLON LS(DOT)    // :
 #define SE_EXCL  LS(N1)     // !
 #define SE_DQT   LS(N2)     // "
 #define SE_HASH  LS(N3)     // #
@@ -21,7 +22,6 @@
 #define SE_AT    RA(N2)     // @
 #define SE_SEMI LS(COMMA) // ;
 #define SE_PIPE RA(LT)      // |
-#define SE_EQUAL LS(N0)     // =
 #define SE_QMARK LS(PLUS)   // ?
 #define SE_LT NUBS          // <
 #define SE_GT LS(SE_LT)     // >
@@ -32,7 +32,7 @@
 #define SE_MINUS SLASH      // -
 #define SE_DOLLAR  RA(N4)   // $
 #define SE_BSLH EQUAL       // ´ (dead)
-#define SE_PLUS MINS       // +
+#define SE_PLUS MINUS       // +
 #define SE_APOS NUHS       // '
 #define SE_TILDE2 TILDE2
 // TILDE2
