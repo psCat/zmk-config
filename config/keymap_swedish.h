@@ -28,12 +28,12 @@
 #define SE_COLON LS(DOT)    // :
 #define SE_CARET LS(RBKT)   // ^ (dead)
 #define SE_GRAVE LS(EQUAL)  // ` (dead)
+#define SE_APOS NUHS       // '
 #define SE_STAR LS(SE_APOS) // *
 #define SE_MINUS SLASH      // -
 #define SE_DOLLAR  RA(N4)   // $
 #define SE_BSLH EQUAL       // ´ (dead)
 #define SE_PLUS MINUS       // +
-#define SE_APOS NUHS       // '
 #define SE_TILDE2 TILDE2
 // TILDE2
 
