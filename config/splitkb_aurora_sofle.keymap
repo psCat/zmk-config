@@ -10,6 +10,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include "keymap_swedish.h"
 
+
+
 // layers
 
 #define DVORAK 0
@@ -49,7 +51,7 @@
 // 
              bindings = <
 &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &none           &ext_power EP_ON    &ext_power EP_OFF &ext_power EP_TOG &trans          &none
-&trans      &kp SE_LBRC     &kp SE_RBRC   &kp SE_LBKT  &kp SE_RBKT  &kp SE_DOLLAR                 &none           &kp SE_QMARK        &kp SE_AMPS       &kp SE_LT         &kp SE_GT       &kp SE_TILDE2
+&trans      &kp SE_LBRC     &kp SE_RBRC   &kp SE_LBKT  &kp SE_RBKT  &kp SE_DOLLAR                 &SE_DQT         &kp SE_QMARK        &kp SE_AMPS       &kp SE_LT         &kp SE_GT       &kp SE_TILDE2
 &trans      &kp SE_SEMI     &kp SE_SLASH  &kp SE_LPAR  &kp SE_RPAR  &kp SE_PIPE                   &kp SE_STAR     &kp SE_CARET        &kp SE_HASH       &kp SE_DQT        &kp SE_MINUS    &trans
 &trans      &kp COLON       &kp SE_EQUAL  &kp SE_AT    &kp SE_EXCL  &kp SE_BSLH  &trans   &trans  &kp SE_PRCNT    &kp SE_GRAVE        &kp SE_PLUS       &kp SE_MINUS      &trans          &trans
                             &trans        &trans       &trans       &trans       &trans   &trans  &trans          &trans              &trans            &trans
@@ -58,6 +60,33 @@
         };
 // Find place for these:
 // &kp TILDE
+/*
+corne            ~
+sofle            *
+corne       #    '
+sofle       *    ä
+corne  :   \      
+sofle  Ö   ´    z 
+
+sofle
+{}[]$ `&<>*
+;/()˛*^#"-ä
+Ö=@!´%`+-z 
+
+corne
+{}[]$"?&<>~
+;/()|#^#"-'
+:=@!\%`+-  
+
+
+corne  {}[]$"?&<>~
+sofle  {}[]$ `&<>*
+corne  ;/()|#^#"-'
+sofle  ;/()˛*^#"-ä
+corne  :=@!\%`+-  
+sofle  Ö=@!´%`+-z 
+
+*/
 
         function_layer {
 // ------------------------------------------------------------------------------------------------------------

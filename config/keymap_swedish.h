@@ -5,37 +5,39 @@
 #define SE_OUEE SEMI // Ö
 #define SE_AUEE SQT  // Ä            single quote
 
-#define SE_COLON LS(DOT)    // :
-#define SE_EXCL  LS(N1)     // !
-#define SE_DQT   LS(N2)     // "
-#define SE_HASH  LS(N3)     // #
-#define SE_PRCNT LS(N5)     // %
-#define SE_AMPS  LS(N6)     // &
-#define SE_SLASH LS(N7)     // /
-#define SE_LPAR  LS(N8)     // (
-#define SE_RPAR  LS(N9)     // )
-#define SE_LBRC RA(N7)    // {
-#define SE_RBRC RA(N0)    // }
-#define SE_LBKT RA(N8)    // [
-#define SE_RBKT RA(N9)    // ]
-#define SE_EQUAL LS(N0)     // =
-#define SE_AT    RA(N2)     // @
-#define SE_SEMI LS(COMMA) // ;
-#define SE_PIPE RA(LT)      // |
-#define SE_QMARK LS(PLUS)   // ?
-#define SE_LT NUBS          // <
-#define SE_GT LS(SE_LT)     // >
-#define SE_COLON LS(DOT)    // :
-#define SE_CARET LS(RBKT)   // ^ (dead)
-#define SE_GRAVE LS(EQUAL)  // ` (dead)
-#define SE_APOS NUHS       // '
-#define SE_STAR LS(SE_APOS) // *
-#define SE_MINUS SLASH      // -
-#define SE_DOLLAR  RA(N4)   // $
-#define SE_BSLH EQUAL       // ´ (dead)
-#define SE_PLUS MINUS       // +
+#define SE_COLON LS(DOT)     // :
+#define SE_EXCL  LS(N1)      // !
+#define SE_DQT   LS(N2)      // "
+#define SE_HASH  LS(N3)      // #
+#define SE_PRCNT LS(N5)      // %
+#define SE_AMPS  LS(N6)      // &
+#define SE_SLASH LS(N7)      // /
+#define SE_LPAR  LS(N8)      // (
+#define SE_RPAR  LS(N9)      // )
+#define SE_LBRC RA(N7)       // {
+#define SE_RBRC RA(N0)       // }
+#define SE_LBKT RA(N8)       // [
+#define SE_RBKT RA(N9)       // ]
+#define SE_EQUAL LS(N0)      // =
+#define SE_AT    RA(N2)      // @
+#define SE_SEMI LS(COMMA)    // ;
+#define SE_PLUS MINUS        // +
+#define SE_QMARK LS(SE_PLUS) // ?
+#define SE_LT NUBS           // <
+#define SE_PIPE RA(SE_LT)    // |
+#define SE_GT LS(SE_LT)      // >
+#define SE_CARET LS(RBKT)    // ^ (dead)
+#define SE_GRAVE LS(EQUAL)   // ` (dead)
+#define SE_APOS NUHS         // '
+#define SE_STAR LS(SE_APOS)  // *
+#define SE_MINUS SLASH       // -
+#define SE_DOLLAR  RA(N4)    // $
+#define SE_BSLH EQUAL        // ´ (dead)
 #define SE_TILDE2 TILDE2
 // TILDE2
+//
+// #define SE_PIPE ALGR(SE_LABK) // |
+// #define SE_LABK KC_NUBS // <
 
 
 // #define SE_UNDS S(SE_MINS) // _
